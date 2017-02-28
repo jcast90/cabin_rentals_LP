@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+header {
+    background: url("/img/main_background.png") center center no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+}
+
+.main_content {
+    position: relative;
+    float: right;
+    top: -70vh;
+    width: 50%;
+    padding: 0 25px;
+    font-size: 2em;
+    line-height: 40px;
+}
+
+.main_content span {
+    margin: 30px 0;
+    display: block;
+    font-weight: 100;
+}
+
+.main_content span b {
+    font-size: 1.25em;
+    font-weight: 800;
+}
+
+.main_content span:nth-of-type(2) {
+    font-size: .75em;
+}
+
+.light_blue {
+    position: relative;
+    left: 50px;
+    width: 33%;
+    height: 100vh;
+    background-color: rgba(42, 120, 165, 0.5);
+}
+
+.light_blue img {
+    position: relative;
+    width: 45%;
+    top: 10%;
+}
+
+.light_blue span {
+    float: left;
+    position: relative;
+    top: 20%;
+    font-size: 1em;
+    padding: 0 15px;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+}
+
+.main_btn {
+    border: 1px solid black;
+    background-color: yellow;
+    font-size: 1em;
+    padding: 10px;
+    margin: 0 15px;
+    width: 40%;
+    float: left;
+    position: relative;
+    top: 50%;
+}
+
+@media screen and (max-width:550px) {
+    .light_blue {
+        background-color: transparent;
+        left: 0;
+        width: 100vw;
+    }
+    .light_blue img,
+    .light_blue span {
+        display: none;
+    }
+    .main_content {
+        width: 70%;
+        top: -80%;
+    }
+    .main_btn {
+        font-size: 1.5em;
+        width: 70%;
+        padding: 2% 0;
+        margin: 2% 15%;
+        top: 70%;
+    }
+}
+
+@media screen and (min-width:550px) {
+    .light_blue img {
+        width: 60%;
+        left: 20%;
+    }
+    .light_blue span {
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+    .main_btn {
+        font-size: 1.2em;
+        width: 70%;
+        padding: 2% 0;
+        margin: 5% 15%;
+        top: 30%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .main_content {
+        width: 50%;
+        margin-right: 5%;
+    }
+    .main_content span {
+        font-size: 2em;
+        line-height: 1.3em;
+    }
+    .main_content span:nth-of-type(2) {
+        font-size: 1.5em;
+        line-height: 1.3em;
+    }
+    .light_blue span {
+        width: 60%;
+        left: 17%;
+    }
+    .light_blue img {
+        left: 25%;
+        width: 50%;
+    }
+    .main_btn {
+        padding: 3% 0;
+        font-size: 1.5em;
+    }
+}
