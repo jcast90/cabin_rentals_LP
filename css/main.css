@@ -80,23 +80,61 @@ header {
 }
 /************ Banner Styling **********************/
 article{
-    position:absolute;
+
     height:50vh;
     background-color:saddlebrown;
+    width:100vw;
+
 }
 .row{
     width:90vw;
     margin: 0 5%;
     float:left;
+
 }
 .col-4{
     float:left;
     width:30vw;
+
   
 }
 article span{
     width:15%;
-    heigth:90%;
+
+}
+article img{
+
+}
+
+
+.gallery{
+    height:50vh;
+    position: relative;
+    background-color: blue;
+
+}
+
+.light_banner{
+    position:relative;
+    float:left;
+    width:100%;
+    height:20vh;
+    background-color: rgba(42, 120, 165, 0.5);
+    bottom: 10vh;
+    z-index: 10;
+}
+
+
+.property{
+    position:relative;
+    top:0;
+    min-height:50vh;
+    background-color:aquamarine;
+}
+footer{
+    height:20vh;
+    background-color:coral;
+
 }
 
 
