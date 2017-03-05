@@ -8,7 +8,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
 }
-
+/********* Splash Image ************/
 header {
     background: url("/img/main_background.png") center center no-repeat;
     background-size: cover;
@@ -16,7 +16,7 @@ header {
     height: 100vh;
     color: #fff;
 }
-
+/************* Main Content ******************/
 .main_content {
     position: relative;
     float: right;
@@ -41,7 +41,7 @@ header {
 .main_content span:nth-of-type(2) {
     font-size: .75em;
 }
-
+/**************** Left Blue banner content  **********************/
 .light_blue {
     position: relative;
     left: 50px;
@@ -66,7 +66,7 @@ header {
     line-height: 20px;
     text-align: center;
 }
-
+/******** button styling *********/
 .main_btn {
     border: 1px solid black;
     background-color: yellow;
@@ -78,6 +78,27 @@ header {
     position: relative;
     top: 50%;
 }
+/************ Banner Styling **********************/
+article{
+    position:absolute;
+    height:50vh;
+    background-color:saddlebrown;
+}
+.row{
+    width:90vw;
+    margin: 0 5%;
+    float:left;
+}
+.col-4{
+    float:left;
+    width:30vw;
+  
+}
+article span{
+    width:15%;
+    heigth:90%;
+}
+
 
 @media screen and (max-width:550px) {
     .light_blue {
@@ -122,27 +143,31 @@ header {
 
 @media screen and (min-width:1200px) {
     .main_content {
-        width: 50%;
+        width: 47%;
         margin-right: 5%;
     }
     .main_content span {
-        font-size: 2em;
+        font-size: 1.75em;
         line-height: 1.3em;
     }
     .main_content span:nth-of-type(2) {
-        font-size: 1.5em;
+        font-size: 1.15em;
         line-height: 1.3em;
     }
     .light_blue span {
         width: 60%;
         left: 17%;
+        line-height:1.5em;
     }
     .light_blue img {
         left: 25%;
         width: 50%;
     }
     .main_btn {
-        padding: 3% 0;
+        width:60%;
+        top:25%;
+        padding: 2% 0;
+        margin: 2% 20%;
         font-size: 1.5em;
     }
 }
