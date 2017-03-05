@@ -10,7 +10,7 @@ body {
 }
 /********* Splash Image ************/
 header {
-    background: url(../img/main_background.png) center center no-repeat;
+    background: url('../img/main_background.png') center center no-repeat;
     background-size: cover;
     width: 100vw;
     height: 100vh;
