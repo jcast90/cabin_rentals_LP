@@ -8,6 +8,15 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
 }
+
+ul,ol,li{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color:black;
+}
 /********* Splash Image ************/
 header {
     background: url('../img/main_background.png') center center no-repeat;
@@ -20,7 +29,6 @@ header {
 .main_content {
     position: relative;
     float: right;
-    top: -70vh;
     width: 50%;
     padding: 0 25px;
     font-size: 2em;
@@ -46,8 +54,9 @@ header {
     position: relative;
     left: 50px;
     width: 33%;
+    float:left;
     height: 100vh;
-    background-color: rgba(42, 120, 165, 0.5);
+    background-color: rgba(31, 175, 234, 0.5);
 }
 
 .light_blue img {
@@ -68,8 +77,8 @@ header {
 }
 /******** button styling *********/
 .main_btn {
-    border: 1px solid black;
-    background-color: yellow;
+    border: 3px solid #3a322e;
+    background-color:#e9d9a5;
     font-size: 1em;
     padding: 10px;
     margin: 0 15px;
@@ -77,87 +86,153 @@ header {
     float: left;
     position: relative;
     top: 50%;
+    color:#3a322e;
 }
-/************ Banner Styling **********************/
-article{
+/************ Article Banner Styling **********************/
 
-    height:50vh;
-    background-color:saddlebrown;
-    width:100vw;
-
+.container{
+     background-color:#3a322e;
+    color:#fff;
 }
 .row{
-    width:90vw;
-    margin: 0 5%;
-    float:left;
 
-}
-.col-4{
-    float:left;
-    width:30vw;
-
-  
-}
-article span{
-    width:15%;
-
-}
-article img{
-
-}
-
-
-.gallery{
-    height:50vh;
-    position: relative;
-    background-color: blue;
-
-}
-
-.light_banner{
-    position:relative;
-    float:left;
     width:100%;
-    height:20vh;
-    background-color: rgba(42, 120, 165, 0.5);
-    bottom: 10vh;
-    z-index: 10;
+
 }
 
+.col-4{
 
-.property{
+    text-align: center;
+    margin:0 auto;
+    padding:20px;
+
+
+}
+
+.row img{
+    display:block;
+    margin:0 auto 20px;
+}
+/*************************** Gallery Styling ***********************/
+
+.slide-viewer{
     position:relative;
-    top:0;
-    min-height:50vh;
-    background-color:aquamarine;
+    overflow:hidden;
+    height:300px;
 }
+.slide-group{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+.slide{
+    width:100%;
+    height:100%;
+    display:none;
+    position:absolute;
+}
+slide:first-child{
+    display:block;
+}
+/*************************** overlap banner Styling ***********************/
+.light_banner{
+    background-color: rgba(42, 120, 165, 0.7);
+    height: 10vh;
+    width:100%;
+    float:left;
+    position:relative;
+    padding:2em 1em .75em;;
+    color:#fff;
+}
+.light_banner span{
+    color:#fff;
+    font-size: 2em;
+    padding-left:
+}
+
+/*************************** Property Styling ***********************/
+.property{
+    background: url(../img/property_background_min.jpg) center center no-repeat;
+    background-size: cover;
+    width:100vw;
+    text-align: center;
+}
+.property h1{
+    padding:6em 0 2em;
+    color:white;
+
+
+}
+.property .header{
+    border: 1px solid #3a322e;
+    background-color: rgba(214, 199, 151, .8);
+    width:70%;
+    margin: 0 auto;
+    padding: 1em 0;
+    font-size:1.25em;
+    font-weight:900;
+
+}
+.property .content{
+    border: 1px solid #3a322e;
+    background-color:rgba(49, 152, 205, .6);
+    width:70%;
+    margin: 0 auto;
+    padding:1em 0;
+    line-height: 2em;
+    color:#fff;
+}
+.b_footer{
+    border: 1px solid #0f455c;
+    background-color:#0f455c;
+    width:70%;
+    margin:0 auto;
+    padding:1em 0;
+}
+.b_footer a{
+    color:#fff;
+    font-size: 1.2em;
+}
+/*************************** Footer Styling ***********************/
 footer{
-    height:20vh;
-    background-color:coral;
-
+      background-color:#3a322e;
+      color:#fff;
+}
+footer span{
+    display:block;
+    padding: 1em;
+}
+footer a{
+    display:block;
+    color:#fff;
 }
 
-
+/************************Media Queries *********************************/
 @media screen and (max-width:550px) {
     .light_blue {
         background-color: transparent;
-        left: 0;
-        width: 100vw;
+        left:0;
+        top:50%;
+        height:100px;
+        width:100vw;
     }
     .light_blue img,
     .light_blue span {
         display: none;
     }
     .main_content {
+        top:10%;
+        float:right;
         width: 70%;
-        top: -80%;
+        margin-right:5%;
+
     }
     .main_btn {
         font-size: 1.5em;
         width: 70%;
         padding: 2% 0;
         margin: 2% 15%;
-        top: 70%;
+        top:90%;
     }
 }
 
@@ -175,9 +250,10 @@ footer{
         width: 70%;
         padding: 2% 0;
         margin: 5% 15%;
-        top: 30%;
+        top: 40%;
     }
 }
+
 
 @media screen and (min-width:1200px) {
     .main_content {
@@ -203,7 +279,7 @@ footer{
     }
     .main_btn {
         width:60%;
-        top:25%;
+        top:30%;
         padding: 2% 0;
         margin: 2% 20%;
         font-size: 1.5em;
