@@ -1,12 +1,14 @@
-//$.fn.image = function(src, f) {
-//  return this.each(function() {
-//    var i = new Image();
-//    i.src = src;
-//    i.onload = f;
-//    this.appendChild(i);
-//  });
-//}
-//$("div.slide-1").image("../img/gallery_img1.jpg");
+$.fn.image = function(src, f) {
+  return this.each(function() {
+    var i = new Image();
+    i.src = src;
+    i.onload = f;
+    this.appendChild(i);
+  });
+}
+$("div.banner-img").image("../img/gallery_img1.jpg");
+
+
 $('.slider').each(function() {              // For every slider
   var $this   = $(this);                    // Current slider
   var $group  = $this.find('.slide-group'); // Get the slide-group (container)
@@ -54,7 +56,7 @@ $('.slider').each(function() {              // For every slider
       } else {                             // Otherwise
         move(0);                           // Move to the first slide
       }
-    }, 4000);                              // Milliseconds timer will wait
+    }, 6000);                              // Milliseconds timer will wait
   }
 
   $.each($slides, function(index) {

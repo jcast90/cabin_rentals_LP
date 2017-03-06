@@ -4,22 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>Cabin Rentals of Georgia</title>
 
-    <link href="css/main.css" type="text/css" rel="stylesheet">
-  <script
-  src="https://code.jquery.com/jquery-1.12.4.min.js"
-  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous"></script>
+<link href="css/main.css" type="text/css" rel="stylesheet">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5C27NS');</script>
+<!-- End Google Tag Manager -->
+
+
 
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5C27NS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
     <header>
         <aside class="light_blue"> <img src="img/logo.png" alt="logo" /> <span>Contact us today for a complimentary appraisal of your existing home or prospective purchase.</span>
-            <button class="main_btn appraisal">Appraisal</button>
-            <button class="main_btn learn_m">Learn More</button>
+            <a href="#"><button class="main_btn appraisal">Appraisal</button></a>
+           <a href="#"> <button class="main_btn learn_m">Learn More</button></a>
 
         </aside>
          <div class="main_content"> <span>It's not just a <b>vacation home,</b> it's an <b>investment.</b></span> <span>Let us take care of it while you reap the benefits.</span> </div>
@@ -35,7 +44,15 @@
         </div>
 
     </article>
-    <div class="slider">
+
+    
+    <div class="banner_img">
+        
+    </div>
+    
+
+    
+<!-- <div class="slider">
     <div class="slide-viewer">
       <div class="slide-group">
        <div class="slide slide-1"><img src="/img/gallery_img1.jpg" alt=""></div>
@@ -49,6 +66,7 @@
     </div>
 
      <script type="text/javascript" src="js/slider.js"></script>
+-->
 
 
     <div class="light_banner"> <span>Check out our award winning services</span>
@@ -107,5 +125,27 @@
             <h1>Agreements</h1> <span><a href="">Owner Login</a></span> <span><a href="">Privacy Policy</a></span> </div>
     </div>
 </footer>
+
+ <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script>
+      $.fn.image = function(src, f) {
+  return this.each(function() {
+    var i = new Image();
+    i.src = src;
+    i.onload = f;
+    this.appendChild(i);
+  });
+}
+$("div.banner_img").image("img/gallery_img1.jpg");
+      WebFont.load({
+        google: {
+          families: ['Lato']
+        }
+      });
+  
+   </script>
 
 </html>
