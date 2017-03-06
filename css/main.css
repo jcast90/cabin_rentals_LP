@@ -122,29 +122,53 @@ header {
   height: 100%;
   margin-left: -60px;
 }
-
+.active{
+    z-index:
+}
 
 /*************************** Gallery Styling ***********************/
 
-.slide-viewer{
-    position:relative;
-    overflow:hidden;
-    height:300px;
+.slider {
+  max-width: 100vw;
+  margin: 0px auto 30px auto;}
+
+.slide-viewer {
+    position: relative; /* needed for IE7 */
+    overflow: hidden;
+    height:80%;}
+
+.slide-group {
+    width: 100%;
+    height: 100%;
+    position: relative;}
+
+.slide {
+    width: 50%;
+    height: 50%;
+    display: none;
+    position: absolute;
 }
-.slide-group{
-    width:100%;
-    height:100%;
-    position:relative;
+
+.slide:first-child {
+    display: block;}
+
+
+/********** BUTTONS **********/
+.slide-buttons {
+  text-align: center;
+    z-index: 1000;
 }
-.slide{
-    width:100%;
-    height:100%;
-    display:none;
-    position:absolute;
-}
-slide:first-child{
-    display:block;
-}
+
+.slide-btn {
+  border: none;
+  background: none;
+  color: #000;
+  font-size: 200%;
+  line-height: 0.5em;}
+
+.slide-btn.active, .slide-btn:hover {
+  color: #ed8e6c;
+  cursor: pointer;}
 /*************************** overlap banner Styling ***********************/
 .light_banner{
     background-color: rgba(42, 120, 165, 0.7);
