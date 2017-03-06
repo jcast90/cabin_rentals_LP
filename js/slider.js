@@ -1,4 +1,5 @@
 $('.slider').each(function(){
+    'use strict';
     var $this = $(this);
     var $group = $this.find('.slide-group');
     var $slides =$this.find('.slide');
@@ -8,6 +9,7 @@ $('.slider').each(function(){
 
 
     function move(newIndex){
+        'use strict';
     var animateLeft, slideLeft;
 
     advance();
@@ -29,6 +31,7 @@ $('.slider').each(function(){
 
     $slides.eq(newIndex).css( {left: 'slideLeft', display:'block'});
     $group.animate({left:animateLeft}, function(){
+        'use strict';
         $slides.eq(currentIndex).css( {display:'none'} );
         $slides.eq(newIndex).css( {left:0});
         $group.css({left:0});
@@ -37,6 +40,7 @@ $('.slider').each(function(){
 }
 
     function advance(){
+        'use strict';
         clearTimeout(timeout);
         timeout = setTimeout(function(){
             if (currentIndex < ($slides.length -1)){
@@ -47,6 +51,7 @@ $('.slider').each(function(){
         }, 4000);
     }
     $.each($slides, function(index){
+        'use strict';
         var $button = $('<button type="button" class="slide-btn">&bull;</button>');
         if (index === currentIndex){
             $button.addClass('active');

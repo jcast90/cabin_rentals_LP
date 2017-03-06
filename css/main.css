@@ -17,6 +17,11 @@ a{
     text-decoration: none;
     color:black;
 }
+.img-circle{
+    width:50%;
+    height:50%;
+    border-radius:50%;
+}
 /********* Splash Image ************/
 header {
     background: url('../img/main_background.png') center center no-repeat;
@@ -94,6 +99,9 @@ header {
      background-color:#3a322e;
     color:#fff;
 }
+.col-4 span{
+   padding:20px;
+}
 .row{
 
     width:100%;
@@ -138,16 +146,21 @@ slide:first-child{
 .light_banner{
     background-color: rgba(42, 120, 165, 0.7);
     height: 10vh;
-    width:100%;
+    width:80%;
     float:left;
     position:relative;
-    padding:2em 1em .75em;;
+    padding:10%;
+    margin-bottom:10%;
     color:#fff;
 }
 .light_banner span{
     color:#fff;
     font-size: 2em;
-    padding-left:
+
+}
+.light_banner img{
+    float:right;
+    width:5vw;
 }
 
 /*************************** Property Styling ***********************/
@@ -201,10 +214,12 @@ footer{
 footer span{
     display:block;
     padding: 1em;
+    font-weight: 100;
 }
 footer a{
     display:block;
     color:#fff;
+    font-weight: 100;
 }
 
 /************************Media Queries *********************************/
@@ -221,7 +236,9 @@ footer a{
         display: none;
     }
     .main_content {
-        top:10%;
+        font-size:1.75em;
+        line-height: 1.25em;
+        top: 2%;
         float:right;
         width: 70%;
         margin-right:5%;
@@ -229,14 +246,14 @@ footer a{
     }
     .main_btn {
         font-size: 1.5em;
-        width: 70%;
+        width: 60%;
         padding: 2% 0;
-        margin: 2% 15%;
-        top:90%;
+        margin: 2% 20%;
+        top:100%;
     }
 }
 
-@media screen and (min-width:550px) {
+@media screen and (min-width:551px) {
     .light_blue img {
         width: 60%;
         left: 20%;
